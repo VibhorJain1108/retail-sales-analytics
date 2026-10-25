@@ -1,0 +1,9 @@
+venv/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+
+# Personal project documentation
+PROJECT_BIBLE.md
