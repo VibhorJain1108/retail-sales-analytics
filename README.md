@@ -1,608 +1,183 @@
-<<<<<<< HEAD
+
 # 📊 Retail Sales Analytics
 
-> **An end-to-end Data Analytics project demonstrating data cleaning, exploratory analysis, SQL-based business analytics, and interactive Power BI dashboards.**
+An end-to-end retail analytics project using Python, SQL, MySQL, and Power BI to explore sales performance, customer behavior, product profitability, and regional trends.
 
-![Project Banner](images/project_banner.png)
-
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![SQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi)
-
-
-</p>
+**Author:** Vibhor Jain  
+**Domain:** Data Analytics | Business Intelligence
 
 ---
 
 ## 📊 Dashboard Preview
 
 ### Executive Dashboard
+![Executive Dashboard](page1_dashboard.png)
 
-![Executive](dashboard/page1_dashboard.png)
+### Product and Customer Insights
+![Product and Customer Dashboard](page2_dashboard.png)
 
-### Product & Customer Insights
-
-![Products](dashboard/page2_dashboard.png)
-
-### Regional & Geographic Insights
-
-![Regional](dashboard/page3_dashboard.png)
+### Regional and Geographic Insights
+![Regional Dashboard](page3_dashboard.png)
 
 ---
 
-![Workflow](images/workflow.png)
+## 🎯 Project Overview
 
----
+This project analyzes the Sample Superstore dataset to identify sales trends, evaluate profitability, understand customer purchasing behavior, and support data-driven business decisions.
 
-## 📑 Table of Contents
+The workflow covers data understanding, cleaning, exploratory data analysis, SQL-based business analysis, and interactive Power BI dashboard development.
 
-- Project Overview
-- Tech Stack
-- Dataset
-- Workflow
-- Dashboard
-- Key Insights
-- Folder Structure
-- Installation
-- Future Improvements
+## 🎯 Business Objectives
 
----
+- Analyze sales and profit trends over time.
+- Identify high-performing and loss-making products.
+- Compare regional and category-level performance.
+- Understand the relationship between discounts and profitability.
+- Evaluate customer purchasing behavior.
+- Present actionable insights through interactive dashboards.
 
-##  Project Overview
+## 🛠️ Technology Stack
 
-This project analyzes a retail sales dataset containing over **10,000 transactions** to uncover business trends, customer behavior, regional performance, product profitability, and the impact of discount strategies.
+| Tool | Purpose |
+|---|---|
+| Python | Data analysis and preprocessing |
+| Pandas and NumPy | Data cleaning and manipulation |
+| Matplotlib | Data visualization |
+| SQL / MySQL | Business queries and analytical reporting |
+| Power BI | Interactive dashboards |
+| Jupyter Notebook | Exploratory analysis |
+| Git and GitHub | Version control and project documentation |
 
-The project follows a structured analytics pipeline covering data cleaning, feature engineering, exploratory analysis, SQL-based business analytics, and interactive dashboard development.
+## 📂 Project Files
 
----
-## ✨ Project Highlights
+### Python Notebooks
+- `01_data_understanding.ipynb` — Inspect and understand the dataset.
+- `02_data_cleaning.ipynb` — Clean and prepare the data.
+- `03_eda.ipynb` — Perform exploratory data analysis.
 
-- End-to-end analytics pipeline
-- 10,194 retail transactions analyzed
-- Python-based data cleaning & feature engineering
-- 50+ SQL business queries
-- Interactive 3-page Power BI dashboard
-- Business recommendations backed by data
+### SQL Scripts
+- `01_database_setup.sql` — Database setup.
+- `02_basic_queries.sql` — Basic SQL analysis.
+- `03_aggregation.sql` — Aggregation and KPI queries.
+- `04_business_analysis.sql` — Business-focused analysis.
+- `05_advanced_sql.sql` — Advanced SQL techniques.
+- `06_interview_queries.sql` — Additional analytical practice queries.
 
----
+### Data Files
+- `sample_-_superstore.csv` — CSV dataset.
+- `sample_-_superstore.xlsx` — Excel dataset.
 
-##  Business Objectives
+### Dashboard and Visual Assets
+- `Retails-sales-analytics.pbix` — Power BI report file.
+- `Project_Banner.png` — Project banner.
+- `Workflow.png` — Analytics workflow.
+- `page1_dashboard.png` — Executive dashboard screenshot.
+- `page2_dashboard.png` — Product and customer dashboard screenshot.
+- `page3_dashboard.png` — Regional dashboard screenshot.
 
-The analysis aims to answer key business questions such as:
+## 🔄 Project Workflow
 
-- Which regions generate the highest sales and profits?
-- Which products contribute the most to profitability?
-- Which products consistently incur losses?
-- How do discounts affect profitability?
-- Who are the most valuable customers?
-- What insights can improve business performance?
+![Project Workflow](Workflow.png)
 
----
+1. Data understanding and validation
+2. Data cleaning and preprocessing
+3. Feature engineering, where applicable
+4. Exploratory data analysis
+5. SQL-based business analysis
+6. Power BI dashboard development
+7. Business interpretation and recommendations
 
-##  Tech Stack
+## 🧹 Data Preparation
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- MySQL
-- SQL
-- Power BI
-- Git & GitHub
-- Jupyter Notebook
+The data preparation stage covers checks for:
 
----
+- Missing values and duplicate records
+- Data types and date formats
+- Column names and consistency
+- Invalid or inconsistent values
+- Suitability of fields for sales and profit analysis
 
-##  Dataset
+The exact transformations are documented in the notebooks.
 
-**Dataset:** Sample Superstore
+## 📈 Exploratory Data Analysis
 
-- **Rows:** 10,194
-- **Columns:** 21
+The analysis explores:
 
-Key fields include:
+- Sales and profit trends
+- Regional performance
+- Product category and sub-category performance
+- Customer purchasing behavior
+- Discount and profitability patterns
+- Shipping performance
 
-- Order Date
-- Ship Date
-- Region
-- Category
-- Sub-Category
-- Customer
-- Sales
-- Quantity
-- Discount
-- Profit
+## 🗄️ SQL Business Analytics
 
----
+The SQL scripts cover database setup, filtering, aggregations, business KPIs, and advanced analytical queries.
 
-# Project Workflow
+Advanced topics are included where implemented, such as joins, subqueries, common table expressions, and window functions.
 
-```
-Raw Data
-    │
-    ▼
-Data Understanding
-    │
-    ▼
-Data Cleaning
-    │
-    ▼
-Feature Engineering
-    │
-    ▼
-Exploratory Data Analysis
-    │
-    ▼
-SQL Business Analytics
-    │
-    ▼
-Power BI Dashboard
-    │
-    ▼
-Business Insights & Recommendations
-```
+## 📊 Power BI Dashboard
 
----
+The Power BI report is designed to present business performance through visual summaries and interactive exploration.
 
-# Project Structure
+Dashboard screenshots are included above. Open `Retails-sales-analytics.pbix` in Power BI Desktop to explore the report, subject to the availability of its data sources.
 
-```
-Retail-Sales-Analytics
-│
-├── data
-│   ├── raw
-│   └── cleaned
-│
-├── notebooks
-│   ├── 01_data_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   └── 03_eda.ipynb
-│
-├── sql
-│   ├── 01_database_setup.sql
-│   ├── 02_basic_queries.sql
-│   ├── 03_aggregation.sql
-│   ├── 04_business_analysis.sql
-│   ├── 05_advanced_sql.sql
-│   └── 06_interview_queries.sql
-│
-├── dashboard
-│
-├── images
-│
-├── requirements.txt
-└── README.md
+## 💡 Business Insights
+
+The final insights should be based on the verified results of the Python notebooks, SQL queries, and Power BI report.
+
+Document the most important findings here, including the relevant metric, comparison, and business implication.
+
+## 🚀 Future Improvements
+
+- Sales forecasting
+- Customer segmentation and RFM analysis
+- Automated data quality checks
+- Additional KPI reporting
+- Reproducible analysis and reporting
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/VibhorJain1108/retail-sales-analytics.git
+cd retail-sales-analytics
 ```
 
----
+### 2. Create a Python environment
 
-# Data Cleaning
-
-The dataset was cleaned using Pandas by:
-
-- Standardizing column names
-- Converting all columns to snake_case
-- Handling inconsistent formats
-- Exporting a cleaned dataset for downstream analysis
-
----
-
-# Feature Engineering
-
-Additional business-oriented features were created:
-
-- Order Year
-- Order Month
-- Order Month Number
-- Order Day
-- Shipping Days
-- Profit Margin
-
----
-
-# Exploratory Data Analysis
-
-Comprehensive business analysis was performed on:
-
-- Business KPIs
-- Sales Trends
-- Regional Performance
-- Category Performance
-- Sub-Category Analysis
-- Product Profitability
-- Customer Analysis
-- Pareto Analysis
-- Purchase Frequency
-- Discount Analysis
-- Shipping Performance
-
----
-
-# SQL Analytics
-
-Business-oriented SQL analysis includes:
-
-- Data Exploration
-- Aggregation
-- Business KPIs
-- Customer Analysis
-- Product Analysis
-- Regional Analysis
-- Discount Analysis
-- Time-Based Analysis
-- Advanced SQL Queries
-- Window Functions
-- CTEs
-- Subqueries
-
----
-
-# Power BI Dashboard
-
-Interactive dashboard includes:
-
-- Executive KPI Cards
-- Sales Trends
-- Profit Trends
-- Regional Performance
-- Category Analysis
-- Customer Insights
-- Discount Impact
-- Interactive Filters
-
----
-
-# Key Business Insights
-
-Some major insights obtained from the analysis include:
-
-- Technology is the most profitable product category.
-- Copiers generate the highest profits among all sub-categories.
-- Tables and Bookcases consistently incur losses.
-- High discounts significantly reduce profitability.
-- Customer value extends beyond revenue and should include profit contribution and purchase frequency.
-- Shipping time has minimal impact on overall profitability.
-
----
-
-# Business Recommendations
-
-- Review pricing strategy for loss-making products.
-- Restrict excessive discounting.
-- Focus marketing efforts on high-value customers.
-- Increase investment in profitable product categories.
-- Monitor regional performance for resource allocation.
-
----
-
-# Skills Demonstrated
-
-- Data Cleaning
-- Data Wrangling
-- Feature Engineering
-- Exploratory Data Analysis
-- Business Analytics
-- SQL
-- Data Visualization
-- Dashboard Development
-- Business Storytelling
-- Git & GitHub
-
----
-
-# Future Improvements
-
-- Predictive Sales Forecasting
-- Customer Segmentation
-- RFM Analysis
-- Inventory Analytics
-- Time-Series Forecasting
-- Machine Learning Models
-
----
-
-<<<<<<< HEAD
-# 📊 Retail Sales Analytics
-
-> **An end-to-end Data Analytics project demonstrating data cleaning, exploratory analysis, SQL-based business analytics, and interactive Power BI dashboards.**
-
-![Project Banner](images/project_banner.png)
-
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![SQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi)
-
-
-</p>
-
----
-
-## 📊 Dashboard Preview
-
-### Executive Dashboard
-
-![Executive](dashboard/page1_dashboard.png)
-
-### Product & Customer Insights
-
-![Products](dashboard/page2_dashboard.png)
-
-### Regional & Geographic Insights
-
-![Regional](dashboard/page3_dashboard.png)
-
----
-
-![Workflow](images/workflow.png)
-
----
-
-## 📑 Table of Contents
-
-- Project Overview
-- Tech Stack
-- Dataset
-- Workflow
-- Dashboard
-- Key Insights
-- Folder Structure
-- Installation
-- Future Improvements
-
----
-
-##  Project Overview
-
-This project analyzes a retail sales dataset containing over **10,000 transactions** to uncover business trends, customer behavior, regional performance, product profitability, and the impact of discount strategies.
-
-The project follows a structured analytics pipeline covering data cleaning, feature engineering, exploratory analysis, SQL-based business analytics, and interactive dashboard development.
-
----
-## ✨ Project Highlights
-
-- End-to-end analytics pipeline
-- 10,194 retail transactions analyzed
-- Python-based data cleaning & feature engineering
-- 50+ SQL business queries
-- Interactive 3-page Power BI dashboard
-- Business recommendations backed by data
-
----
-
-##  Business Objectives
-
-The analysis aims to answer key business questions such as:
-
-- Which regions generate the highest sales and profits?
-- Which products contribute the most to profitability?
-- Which products consistently incur losses?
-- How do discounts affect profitability?
-- Who are the most valuable customers?
-- What insights can improve business performance?
-
----
-
-##  Tech Stack
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- MySQL
-- SQL
-- Power BI
-- Git & GitHub
-- Jupyter Notebook
-
----
-
-##  Dataset
-
-**Dataset:** Sample Superstore
-
-- **Rows:** 10,194
-- **Columns:** 21
-
-Key fields include:
-
-- Order Date
-- Ship Date
-- Region
-- Category
-- Sub-Category
-- Customer
-- Sales
-- Quantity
-- Discount
-- Profit
-
----
-
-# Project Workflow
-
-```
-Raw Data
-    │
-    ▼
-Data Understanding
-    │
-    ▼
-Data Cleaning
-    │
-    ▼
-Feature Engineering
-    │
-    ▼
-Exploratory Data Analysis
-    │
-    ▼
-SQL Business Analytics
-    │
-    ▼
-Power BI Dashboard
-    │
-    ▼
-Business Insights & Recommendations
+```bash
+python -m venv .venv
 ```
 
----
+Activate it on Windows:
 
-# Project Structure
-
-```
-Retail-Sales-Analytics
-│
-├── data
-│   ├── raw
-│   └── cleaned
-│
-├── notebooks
-│   ├── 01_data_understanding.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   └── 03_eda.ipynb
-│
-├── sql
-│   ├── 01_database_setup.sql
-│   ├── 02_basic_queries.sql
-│   ├── 03_aggregation.sql
-│   ├── 04_business_analysis.sql
-│   ├── 05_advanced_sql.sql
-│   └── 06_interview_queries.sql
-│
-├── dashboard
-│
-├── images
-│
-├── requirements.txt
-└── README.md
+```bash
+.venv\Scripts\activate
 ```
 
----
+### 3. Install dependencies
 
-# Data Cleaning
+```bash
+python -m pip install -r requirements.txt
+```
 
-The dataset was cleaned using Pandas by:
+### 4. Run the notebooks
 
-- Standardizing column names
-- Converting all columns to snake_case
-- Handling inconsistent formats
-- Exporting a cleaned dataset for downstream analysis
+```bash
+jupyter notebook
+```
 
----
+Open the notebooks in numerical order and follow their instructions.
 
-# Feature Engineering
+### 5. Run the SQL scripts
 
-Additional business-oriented features were created:
+Install and configure MySQL if required. Review the database setup script, configure the database and credentials locally, and execute the SQL scripts in the appropriate order.
 
-- Order Year
-- Order Month
-- Order Month Number
-- Order Day
-- Shipping Days
-- Profit Margin
+### 6. Open the Power BI report
 
----
-
-# Exploratory Data Analysis
-
-Comprehensive business analysis was performed on:
-
-- Business KPIs
-- Sales Trends
-- Regional Performance
-- Category Performance
-- Sub-Category Analysis
-- Product Profitability
-- Customer Analysis
-- Pareto Analysis
-- Purchase Frequency
-- Discount Analysis
-- Shipping Performance
-
----
-
-# SQL Analytics
-
-Business-oriented SQL analysis includes:
-
-- Data Exploration
-- Aggregation
-- Business KPIs
-- Customer Analysis
-- Product Analysis
-- Regional Analysis
-- Discount Analysis
-- Time-Based Analysis
-- Advanced SQL Queries
-- Window Functions
-- CTEs
-- Subqueries
-
----
-
-# Power BI Dashboard
-
-Interactive dashboard includes:
-
-- Executive KPI Cards
-- Sales Trends
-- Profit Trends
-- Regional Performance
-- Category Analysis
-- Customer Insights
-- Discount Impact
-- Interactive Filters
-
----
-
-# Key Business Insights
-
-Some major insights obtained from the analysis include:
-
-- Technology is the most profitable product category.
-- Copiers generate the highest profits among all sub-categories.
-- Tables and Bookcases consistently incur losses.
-- High discounts significantly reduce profitability.
-- Customer value extends beyond revenue and should include profit contribution and purchase frequency.
-- Shipping time has minimal impact on overall profitability.
-
----
-
-# Business Recommendations
-
-- Review pricing strategy for loss-making products.
-- Restrict excessive discounting.
-- Focus marketing efforts on high-value customers.
-- Increase investment in profitable product categories.
-- Monitor regional performance for resource allocation.
-
----
-
-# Skills Demonstrated
-
-- Data Cleaning
-- Data Wrangling
-- Feature Engineering
-- Exploratory Data Analysis
-- Business Analytics
-- SQL
-- Data Visualization
-- Dashboard Development
-- Business Storytelling
-- Git & GitHub
-
----
-
-# Future Improvements
-
-- Predictive Sales Forecasting
-- Customer Segmentation
-- RFM Analysis
-- Inventory Analytics
-- Time-Series Forecasting
-- Machine Learning Models
-
----
+Open `Retails-sales-analytics.pbix` in Power BI Desktop. If prompted, configure the data source paths.
 
 ## 👨‍💻 Author
 
@@ -615,6 +190,6 @@ Birla Institute of Technology, Mesra
 - **LinkedIn:** [Vibhor Jain](https://www.linkedin.com/in/vibhorjain1108)
 - **Email:** jainvibhu2004@gmail.com
 
-# retail-sales-analytics
-Retail Sales Analytics using Python, SQL, and Power BI. Includes data cleaning, exploratory data analysis, sales trend analysis, and interactive dashboards to generate actionable business insights.
->>>>>>> 80cf3ffd24eef90b630bf5ee5792935a74eb7716
+---
+
+If you find this project useful, feel free to explore the notebooks, SQL scripts, and dashboard.
