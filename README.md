@@ -1,142 +1,135 @@
-
 # 📊 Retail Sales Analytics
 
-An end-to-end retail analytics project using Python, SQL, MySQL, and Power BI to explore sales performance, customer behavior, product profitability, and regional trends.
+**An end-to-end data analytics project using Python, SQL, and Power BI to analyze retail sales, profitability, customer behavior, and regional performance.**
 
-**Author:** Vibhor Jain  
-**Domain:** Data Analytics | Business Intelligence
+This project uses the Sample Superstore dataset to demonstrate a complete analytics workflow, from data understanding and cleaning to exploratory analysis, SQL-based business queries, and interactive Power BI dashboards.
 
----
+## 📌 Project Overview
 
-## 📊 Dashboard Preview
+Retail businesses need to understand sales performance, identify profitable products, evaluate regional trends, and make informed decisions using data.
 
-### Executive Dashboard
+This project explores retail transaction data to answer business questions and present findings through Python notebooks, SQL scripts, and Power BI visualizations.
+
+### 🎯 Business Objectives
+
+- Analyze sales and profit performance.
+- Evaluate product category and sub-category performance.
+- Compare regional sales and profitability.
+- Explore customer purchasing patterns.
+- Investigate the relationship between discounts and profit.
+- Develop interactive dashboards for business reporting.
+
+## 🖥️ Dashboard Preview
+
+### 1. Executive Dashboard
+
 ![Executive Dashboard](page1_dashboard.png)
 
-### Product and Customer Insights
-![Product and Customer Dashboard](page2_dashboard.png)
+### 2. Product and Customer Insights
 
-### Regional and Geographic Insights
-![Regional Dashboard](page3_dashboard.png)
+![Product and Customer Insights](page2_dashboard.png)
 
----
+### 3. Regional and Geographic Insights
 
-## 🎯 Project Overview
+![Regional and Geographic Insights](page3_dashboard.png)
 
-This project analyzes the Sample Superstore dataset to identify sales trends, evaluate profitability, understand customer purchasing behavior, and support data-driven business decisions.
+*The screenshots above are stored in this repository. Open the Power BI report for interactive exploration.*
 
-The workflow covers data understanding, cleaning, exploratory data analysis, SQL-based business analysis, and interactive Power BI dashboard development.
+## 🛠️ Tech Stack
 
-## 🎯 Business Objectives
-
-- Analyze sales and profit trends over time.
-- Identify high-performing and loss-making products.
-- Compare regional and category-level performance.
-- Understand the relationship between discounts and profitability.
-- Evaluate customer purchasing behavior.
-- Present actionable insights through interactive dashboards.
-
-## 🛠️ Technology Stack
-
-| Tool | Purpose |
+| Technology | Purpose |
 |---|---|
 | Python | Data analysis and preprocessing |
-| Pandas and NumPy | Data cleaning and manipulation |
+| Pandas and NumPy | Data manipulation and cleaning |
 | Matplotlib | Data visualization |
 | SQL / MySQL | Business queries and analytical reporting |
-| Power BI | Interactive dashboards |
-| Jupyter Notebook | Exploratory analysis |
+| Power BI | Interactive dashboards and KPI reporting |
+| Jupyter Notebook | Exploratory data analysis |
 | Git and GitHub | Version control and project documentation |
 
-## 📂 Project Files
+## 📂 Repository Structure
 
-### Python Notebooks
-- `01_data_understanding.ipynb` — Inspect and understand the dataset.
-- `02_data_cleaning.ipynb` — Clean and prepare the data.
-- `03_eda.ipynb` — Perform exploratory data analysis.
-
-### SQL Scripts
-- `01_database_setup.sql` — Database setup.
-- `02_basic_queries.sql` — Basic SQL analysis.
-- `03_aggregation.sql` — Aggregation and KPI queries.
-- `04_business_analysis.sql` — Business-focused analysis.
-- `05_advanced_sql.sql` — Advanced SQL techniques.
-- `06_interview_queries.sql` — Additional analytical practice queries.
-
-### Data Files
-- `sample_-_superstore.csv` — CSV dataset.
-- `sample_-_superstore.xlsx` — Excel dataset.
-
-### Dashboard and Visual Assets
-- `Retails-sales-analytics.pbix` — Power BI report file.
-- `Project_Banner.png` — Project banner.
-- `Workflow.png` — Analytics workflow.
-- `page1_dashboard.png` — Executive dashboard screenshot.
-- `page2_dashboard.png` — Product and customer dashboard screenshot.
-- `page3_dashboard.png` — Regional dashboard screenshot.
+```text
+retail-sales-analytics/
+│
+├── 01_data_understanding.ipynb
+├── 02_data_cleaning.ipynb
+├── 03_eda.ipynb
+│
+├── 01_database_setup.sql
+├── 02_basic_queries.sql
+├── 03_aggregation.sql
+├── 04_business_analysis.sql
+├── 05_advanced_sql.sql
+├── 06_interview_queries.sql
+│
+├── Retails-sales-analytics.pbix
+├── Project_Banner.png
+├── Workflow.png
+│
+├── page1_dashboard.png
+├── page2_dashboard.png
+├── page3_dashboard.png
+│
+├── sample_-_superstore.csv
+├── sample_-_superstore.xlsx
+├── requirements.txt
+└── README.md
+```
 
 ## 🔄 Project Workflow
 
-![Project Workflow](Workflow.png)
+1. **Data Understanding:** Inspect the dataset, columns, data types, and overall structure.
+2. **Data Cleaning:** Examine missing values, duplicate records, inconsistent formats, and data quality.
+3. **Exploratory Data Analysis:** Investigate sales, profit, product categories, customers, and regional patterns.
+4. **SQL Analysis:** Write queries for filtering, aggregation, KPI analysis, and business questions.
+5. **Dashboard Development:** Present important metrics and analytical views in Power BI.
+6. **Business Interpretation:** Use verified analytical results to support business recommendations.
 
-1. Data understanding and validation
-2. Data cleaning and preprocessing
-3. Feature engineering, where applicable
-4. Exploratory data analysis
-5. SQL-based business analysis
-6. Power BI dashboard development
-7. Business interpretation and recommendations
+## 🐍 Python Analysis
 
-## 🧹 Data Preparation
+The Python notebooks are organized into three stages:
 
-The data preparation stage covers checks for:
+- `01_data_understanding.ipynb` — Dataset inspection and initial understanding.
+- `02_data_cleaning.ipynb` — Data quality checks and preprocessing.
+- `03_eda.ipynb` — Exploratory data analysis and visualizations.
 
-- Missing values and duplicate records
-- Data types and date formats
-- Column names and consistency
-- Invalid or inconsistent values
-- Suitability of fields for sales and profit analysis
+## 🗄️ SQL Analysis
 
-The exact transformations are documented in the notebooks.
+The repository includes six SQL scripts:
 
-## 📈 Exploratory Data Analysis
+- `01_database_setup.sql` — Database setup.
+- `02_basic_queries.sql` — Basic queries and filtering.
+- `03_aggregation.sql` — Aggregations and summary metrics.
+- `04_business_analysis.sql` — Business-oriented analytical queries.
+- `05_advanced_sql.sql` — Advanced SQL analysis.
+- `06_interview_queries.sql` — Additional SQL practice and analytical questions.
 
-The analysis explores:
+The scripts can be reviewed and executed in the appropriate order after configuring the database and table structure.
 
-- Sales and profit trends
-- Regional performance
-- Product category and sub-category performance
-- Customer purchasing behavior
-- Discount and profitability patterns
-- Shipping performance
+## 📈 Power BI Dashboard
 
-## 🗄️ SQL Business Analytics
+The Power BI report provides visual summaries of retail performance and supports further exploration of the dataset.
 
-The SQL scripts cover database setup, filtering, aggregations, business KPIs, and advanced analytical queries.
+**Report file:** `Retails-sales-analytics.pbix`
 
-Advanced topics are included where implemented, such as joins, subqueries, common table expressions, and window functions.
+To explore the report:
 
-## 📊 Power BI Dashboard
+1. Install Power BI Desktop.
+2. Download or clone this repository.
+3. Open the `.pbix` file.
+4. Configure the data source if prompted.
+5. Refresh the data if required.
 
-The Power BI report is designed to present business performance through visual summaries and interactive exploration.
+## ⚙️ Getting Started
 
-Dashboard screenshots are included above. Open `Retails-sales-analytics.pbix` in Power BI Desktop to explore the report, subject to the availability of its data sources.
+### Prerequisites
 
-## 💡 Business Insights
-
-The final insights should be based on the verified results of the Python notebooks, SQL queries, and Power BI report.
-
-Document the most important findings here, including the relevant metric, comparison, and business implication.
-
-## 🚀 Future Improvements
-
-- Sales forecasting
-- Customer segmentation and RFM analysis
-- Automated data quality checks
-- Additional KPI reporting
-- Reproducible analysis and reporting
-
-## ▶️ Getting Started
+- Python 3
+- Git
+- Jupyter Notebook
+- MySQL, if running the SQL scripts
+- Power BI Desktop, for the dashboard
 
 ### 1. Clone the repository
 
@@ -145,7 +138,7 @@ git clone https://github.com/VibhorJain1108/retail-sales-analytics.git
 cd retail-sales-analytics
 ```
 
-### 2. Create a Python environment
+### 2. Create a virtual environment
 
 ```bash
 python -m venv .venv
@@ -157,27 +150,42 @@ Activate it on Windows:
 .venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+On macOS or Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install Python dependencies
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-### 4. Run the notebooks
+### 4. Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Open the notebooks in numerical order and follow their instructions.
+Open the notebooks in numerical order.
 
 ### 5. Run the SQL scripts
 
-Install and configure MySQL if required. Review the database setup script, configure the database and credentials locally, and execute the SQL scripts in the appropriate order.
+Configure your MySQL database and import the dataset according to the database setup script. Review each SQL file before executing it, and run the scripts in the appropriate order.
 
-### 6. Open the Power BI report
+### 6. Explore the Power BI report
 
-Open `Retails-sales-analytics.pbix` in Power BI Desktop. If prompted, configure the data source paths.
+Open `Retails-sales-analytics.pbix` in Power BI Desktop. If the report requests a data source, update its path to match your local dataset.
+
+## 🚀 Future Improvements
+
+- Add verified business insights and quantified findings.
+- Develop sales forecasting models.
+- Perform customer segmentation and RFM analysis.
+- Add automated data quality checks.
+- Improve dashboard interactivity and KPI reporting.
+- Document reproducible database and dashboard setup steps.
 
 ## 👨‍💻 Author
 
@@ -186,10 +194,9 @@ Open `Retails-sales-analytics.pbix` in Power BI Desktop. If prompted, configure 
 Electronics & Communication Engineering  
 Birla Institute of Technology, Mesra
 
-- **GitHub:** [VibhorJain1108](https://github.com/VibhorJain1108)
-- **LinkedIn:** [Vibhor Jain](https://www.linkedin.com/in/vibhorjain1108)
-- **Email:** jainvibhu2004@gmail.com
+- GitHub: [VibhorJain1108](https://github.com/VibhorJain1108)
+- LinkedIn: [Vibhor Jain](https://www.linkedin.com/)
 
 ---
 
-If you find this project useful, feel free to explore the notebooks, SQL scripts, and dashboard.
+*Explore the notebooks, SQL scripts, and Power BI dashboards to learn more about the project.*
