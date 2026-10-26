@@ -21,18 +21,14 @@ This project explores retail transaction data to answer business questions and p
 
 ## 🖥️ Dashboard Preview
 
-### 1. Executive Dashboard
-
+### Executive Dashboard
 ![Executive Dashboard](page1_dashboard.png)
 
-### 2. Product and Customer Insights
-
+### Product and Customer Insights
 ![Product and Customer Insights](page2_dashboard.png)
 
-### 3. Regional and Geographic Insights
-
+### Regional and Geographic Insights
 ![Regional and Geographic Insights](page3_dashboard.png)
-
 *The screenshots above are stored in this repository. Open the Power BI report for interactive exploration.*
 
 ## 🛠️ Tech Stack
